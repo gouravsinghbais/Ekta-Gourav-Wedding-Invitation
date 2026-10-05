@@ -30,9 +30,6 @@
       h += '<span class="' + (hl ? 'hl' : '') + '">' + d + (hl ? heart : '') + '</span>';
     }
     $('#calGrid').innerHTML = h;
-    $('#calEvents').innerHTML = C.events.map(function (e) {
-      return '<div class="ev-row"><div>' + esc(e.name).toUpperCase() + '<small>' + e.day + ' November · ' + esc(e.theme) + '</small></div><em>' + e.time + '</em></div>';
-    }).join('');
   })();
 
   /* ---------- Timeline ---------- */
